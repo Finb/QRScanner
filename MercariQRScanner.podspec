@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mercari/QRScanner.git", :tag => s.version }
   s.source_files = "QRScanner/*.swift", "QRScanner/**/*.swift"
   s.resource_bundles = {
-			'QRScannerAssets' => ['QRScanner/*.xcassets']
+	  'QRScannerAssets' => ['QRScanner/*.xcassets']
   }
 end
