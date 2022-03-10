@@ -11,5 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.source       = { :git => "https://github.com/mercari/QRScanner.git", :tag => s.version }
   s.source_files = "QRScanner/*.swift", "QRScanner/**/*.swift"
-  s.resources    = "QRScanner/*.xcassets"
+  s.resource_bundles = {
+			'QRScannerAssets' => ['QRScanner/*.xcassets']
+  }
 end
